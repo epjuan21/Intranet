@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+:root {
+  --gray-color: #586069;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -12,17 +16,29 @@ body {
 }
 
 header {
-    padding: 10px;
     height: 60px;
     background-color: #FFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid lightgray;
 }
 
-header, footer {
-    color: #FFF;
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-title img {
+  width: 40px;
+  padding-left: 32px;
+}
+
+.header-title a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--gray-color);
+  padding-left: 16px;
 }
 
 .header-nav a {
@@ -47,9 +63,13 @@ section {
   }
 
   footer {
-    height: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--gray-color);
+    font-size: 12px;
+    height: 50px;
     padding: 10px;
-    border-top: 1px solid white;
+    border-top: 1px solid lightgray;
   }
 
 
@@ -85,10 +105,6 @@ section {
     font-size: 13px;
     padding: 16px;
     flex-grow: 2;
-    background-image: url(img/indicators.png);
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: 50%;
   }
   
   .card-footer {

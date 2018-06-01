@@ -14,7 +14,7 @@ body {
 header {
     padding: 10px;
     height: 60px;
-    background-color: darkgrey;
+    background-color: #FFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +23,6 @@ header {
 
 header, footer {
     color: #FFF;
-    background: linear-gradient(90deg, #232526 10%, #414345 90%);
 }
 
 .header-nav a {
